@@ -1,0 +1,23 @@
+dizionario git:
+
+git init: inizializza il repository alla cartella corrente;
+
+git status: fa controllare lo stato del repository e del branch, se ci sono file da committare o da addare;
+
+git add: aggiunge i file alla prossima commit;
+
+git branch: fa controllare i branch esistenti;
+
+git checkout: fa selezionare il branch in cui lavorare;
+
+git remote add origin "url": aggiunge una "origin" (un repository non locale);
+
+git push origin "branch": carica la commit sul branch del repository remoto della origin;
+
+git branch -d "nomebranch" : elimina un branch;
+
+git remote set-url origin "nuovo url": setta un altra origin;
+
+git remote remove origin : rimuove la origin corrente;
+
+
