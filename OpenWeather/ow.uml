@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_4KkRIDueEeuEK8HRAZ5O6w" name="NewModel">
+  <packageImport xmi:id="_3EUmgDu5EeuEK8HRAZ5O6w">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_9GweUDueEeuEK8HRAZ5O6w" name="utente">
+    <eAnnotations xmi:id="_9GzhoDueEeuEK8HRAZ5O6w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_9GzhoTueEeuEK8HRAZ5O6w" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="__I1q0DueEeuEK8HRAZ5O6w" name="Ricerca temperatura e pressione attuali tramite coordinate GPS">
+    <include xmi:id="_-QD_MDvfEeufTK4RUSUGMg" addition="_sP468Du2EeuEK8HRAZ5O6w"/>
+    <include xmi:id="_3cVSQDyHEeuFi9Xtvecc7Q" addition="_szL3QDugEeuEK8HRAZ5O6w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_JCJ5UDufEeuEK8HRAZ5O6w" name="Ricerca coordinate GPS tramite stringa">
+    <include xmi:id="_n5-XoDyHEeuFi9Xtvecc7Q" addition="_wiyK8DufEeuEK8HRAZ5O6w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_kBRyMDufEeuEK8HRAZ5O6w" name="Ricerca statistiche meteo periodiche tramite coordinate GPS">
+    <include xmi:id="_SuTjoDuhEeuEK8HRAZ5O6w" addition="_szL3QDugEeuEK8HRAZ5O6w"/>
+    <include xmi:id="_xbY0oDukEeuEK8HRAZ5O6w" addition="_mbYD0DukEeuEK8HRAZ5O6w"/>
+    <include xmi:id="_NP0jEDvgEeufTK4RUSUGMg" addition="_GLuOMDvgEeufTK4RUSUGMg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_tHbeYDufEeuEK8HRAZ5O6w" memberEnd="_tHcFcDufEeuEK8HRAZ5O6w _tHcFcTufEeuEK8HRAZ5O6w">
+    <ownedEnd xmi:id="_tHcFcDufEeuEK8HRAZ5O6w" type="_9GweUDueEeuEK8HRAZ5O6w" association="_tHbeYDufEeuEK8HRAZ5O6w"/>
+    <ownedEnd xmi:id="_tHcFcTufEeuEK8HRAZ5O6w" type="__I1q0DueEeuEK8HRAZ5O6w" association="_tHbeYDufEeuEK8HRAZ5O6w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_tmQIYDufEeuEK8HRAZ5O6w" memberEnd="_tmQIYTufEeuEK8HRAZ5O6w _tmQvcDufEeuEK8HRAZ5O6w">
+    <ownedEnd xmi:id="_tmQIYTufEeuEK8HRAZ5O6w" type="_9GweUDueEeuEK8HRAZ5O6w" association="_tmQIYDufEeuEK8HRAZ5O6w"/>
+    <ownedEnd xmi:id="_tmQvcDufEeuEK8HRAZ5O6w" type="_JCJ5UDufEeuEK8HRAZ5O6w" association="_tmQIYDufEeuEK8HRAZ5O6w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uEpUkDufEeuEK8HRAZ5O6w" memberEnd="_uEpUkTufEeuEK8HRAZ5O6w _uEp7oDufEeuEK8HRAZ5O6w">
+    <ownedEnd xmi:id="_uEpUkTufEeuEK8HRAZ5O6w" type="_9GweUDueEeuEK8HRAZ5O6w" association="_uEpUkDufEeuEK8HRAZ5O6w"/>
+    <ownedEnd xmi:id="_uEp7oDufEeuEK8HRAZ5O6w" type="_kBRyMDufEeuEK8HRAZ5O6w" association="_uEpUkDufEeuEK8HRAZ5O6w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_wiyK8DufEeuEK8HRAZ5O6w" name="Consultazione dizionario NOMI-CITTA'-COORDINATE"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_szL3QDugEeuEK8HRAZ5O6w" name="Controllo validità coordinate GPS inserite">
+    <include xmi:id="_mS-LMDujEeuEK8HRAZ5O6w" addition="_VqA04DujEeuEK8HRAZ5O6w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_VqA04DujEeuEK8HRAZ5O6w" name="Verifica esistenza città corrispondente alle coordinate inserite">
+    <include xmi:id="_qKSbADujEeuEK8HRAZ5O6w" addition="_wiyK8DufEeuEK8HRAZ5O6w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_mbYD0DukEeuEK8HRAZ5O6w" name="Filtraggio delle statistiche meteo in base al periodo di interesse"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_sP468Du2EeuEK8HRAZ5O6w" name="Interrogazione API OpenWeatherMap"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_V_yOkDu5EeuEK8HRAZ5O6w" name="model">
+    <packagedElement xmi:type="uml:Class" xmi:id="_3mWqoDu7EeuEK8HRAZ5O6w" name="Coords" visibility="public">
+      <ownedAttribute xmi:id="_6iP0ADu7EeuEK8HRAZ5O6w" name="lat" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9YSNADu7EeuEK8HRAZ5O6w" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_7NH9ADu7EeuEK8HRAZ5O6w" name="lon" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_SvR_wDu8EeuEK8HRAZ5O6w" name="toString" visibility="public">
+        <ownedParameter xmi:id="_Xqi_4Du8EeuEK8HRAZ5O6w" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_g4xC8Du8EeuEK8HRAZ5O6w" name="isGood" visibility="public">
+        <ownedParameter xmi:id="_mzG6cDu8EeuEK8HRAZ5O6w" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EhknEDvAEeuEK8HRAZ5O6w" name="RecordMeteo" visibility="public">
+      <ownedAttribute xmi:id="_0lHU8DvAEeuEK8HRAZ5O6w" name="temp" visibility="private" type="_bJXd4DvBEeuEK8HRAZ5O6w"/>
+      <ownedAttribute xmi:id="_07J2YDvAEeuEK8HRAZ5O6w" name="press" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_4vDJUDvBEeuEK8HRAZ5O6w" name="epoch" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ka6dgDyMEeuFi9Xtvecc7Q" name="city" visibility="private" type="_XyL34DyLEeuFi9Xtvecc7Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bJXd4DvBEeuEK8HRAZ5O6w" name="Temp" visibility="public">
+      <ownedAttribute xmi:id="_eTbmIDvBEeuEK8HRAZ5O6w" name="cur" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_eYsgoDvBEeuEK8HRAZ5O6w" name="min" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lnJEUDvBEeuEK8HRAZ5O6w" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_emK78DvBEeuEK8HRAZ5O6w" name="max" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XyL34DyLEeuFi9Xtvecc7Q" name="City" visibility="public">
+      <ownedAttribute xmi:id="_es2j8DyLEeuFi9Xtvecc7Q" name="name" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_e9irUDyLEeuFi9Xtvecc7Q" name="coord" visibility="private" type="_3mWqoDu7EeuEK8HRAZ5O6w"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_f4h0UDvEEeuEK8HRAZ5O6w" name="util">
+    <packagedElement xmi:type="uml:Package" xmi:id="_kppZ8DvEEeuEK8HRAZ5O6w" name="stats"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_lI4PoDvwEeuOhMDy8licqg" name="parser">
+      <packagedElement xmi:type="uml:Class" xmi:id="_hUqwQDvGEeuEK8HRAZ5O6w" name="ParserCity" visibility="public">
+        <ownedOperation xmi:id="_FKzGEDvHEeuEK8HRAZ5O6w" name="loadCityData" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_sg-QoDvGEeuEK8HRAZ5O6w" name="ParserMeteo" visibility="public">
+        <ownedOperation xmi:id="_NI4S8DvzEeuOhMDy8licqg" name="loadMeteoData" visibility="public"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_2BdT8D4tEeubQplpOK1QGQ" name="filter"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_GLuOMDvgEeufTK4RUSUGMg" name="Consultazione dataset meteo locale"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_x9PGMDvgEeufTK4RUSUGMg" name="amministratore">
+    <eAnnotations xmi:id="_x9PGMTvgEeufTK4RUSUGMg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_x9PtQDvgEeufTK4RUSUGMg" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_0c94ADvgEeufTK4RUSUGMg" name="Aggiornamento dataset meteo locale">
+    <include xmi:id="_d5V1oDyGEeuFi9Xtvecc7Q" addition="_sP468Du2EeuEK8HRAZ5O6w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_5VMLMDvgEeufTK4RUSUGMg" memberEnd="_5VMLMTvgEeufTK4RUSUGMg _5VMLMjvgEeufTK4RUSUGMg">
+    <ownedEnd xmi:id="_5VMLMTvgEeufTK4RUSUGMg" type="_x9PGMDvgEeufTK4RUSUGMg" association="_5VMLMDvgEeufTK4RUSUGMg"/>
+    <ownedEnd xmi:id="_5VMLMjvgEeufTK4RUSUGMg" type="_0c94ADvgEeufTK4RUSUGMg" association="_5VMLMDvgEeufTK4RUSUGMg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_sdQt4DyNEeuFi9Xtvecc7Q" name="controller">
+    <packagedElement xmi:type="uml:Class" xmi:id="_uOk6gDyNEeuFi9Xtvecc7Q" name="APIController" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_KniEUD1jEeu-CIC_gCFQAQ" name="database">
+    <packagedElement xmi:type="uml:Class" xmi:id="_8DXUMD36EeuFb_sOQNHFVA" name="DatabaseClass" visibility="public"/>
+  </packagedElement>
+</uml:Model>
