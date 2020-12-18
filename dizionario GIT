@@ -8,16 +8,22 @@ git add: aggiunge i file alla prossima commit;
 
 git branch: fa controllare i branch esistenti;
 
+git branch -a: mostra tutti i branch locali e remoti del repository corrente;
+
 git checkout: fa selezionare il branch in cui lavorare;
 
+git push origin "nomebranch": carica la commit sul branch del repository remoto della origin al branch "nomebranch";
+
+git branch -d "nomebranch" : elimina un branch (in locale);
+
+git push origin --delete "nomebranch": elimina il branch "nomebranch" dal repository remoto";
+
 git remote add origin "url": aggiunge una "origin" (un repository non locale);
-
-git push origin "branch": carica la commit sul branch del repository remoto della origin;
-
-git branch -d "nomebranch" : elimina un branch;
 
 git remote set-url origin "nuovo url": setta un altra origin;
 
 git remote remove origin : rimuove la origin corrente;
 
+git merge "nomebranch" : unisce il branch "nomebranch" al branch corrente(il branch "nomebranch" continua ad esistere);
 
+git merge
