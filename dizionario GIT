@@ -26,4 +26,7 @@ git remote remove origin : rimuove la origin corrente;
 
 git merge "nomebranch" : unisce il branch "nomebranch" al branch corrente(il branch "nomebranch" continua ad esistere);
 
-git merge
+git checkout . :fa tornare il repository locale all' ultima commit (annulla le modifiche non committate);
+
+git checkout <nomefile> : fa tornare un solo file all' ultima commit (annulla le modifiche non committate);
+
